@@ -211,7 +211,6 @@ input[type=submit]:hover {
 }
 
 /* about me */
-/* section */
 .aboutWrapper {
   width: 100%;
   display: flex;
@@ -232,65 +231,56 @@ input[type=submit]:hover {
   margin-top: -30px;
 }
 
-.one {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.two {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.three {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-}
-
-.four {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.five {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.six {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-}
-
-.seven {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.eight {
-  grid-row-start: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.nine {
-  grid-row-start: 3;
-  grid-column-start: 3;
-}
-
 .pic {
   width: 30%;
+}
+.pic .one {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.pic .two {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.pic .three {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+}
+.pic .four {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.pic .five {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.pic .six {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+}
+.pic .seven {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.pic .eight {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.pic .nine {
+  grid-row-start: 3;
+  grid-column-start: 3;
 }
 
 .Gallerywrapper {
@@ -311,7 +301,7 @@ input[type=submit]:hover {
   color: #f2f3e7;
   font-size: 2.2em;
   font-family: "Bubbler One", sans-serif;
-  margin-left: 30px;
+  margin-left: 5%;
   margin-right: 25px;
   margin-top: 80px;
   font-weight: 200;
@@ -319,7 +309,7 @@ input[type=submit]:hover {
 
 /* about me list */
 .aboutList {
-  width: 250%;
+  width: 140%;
   color: #f2f3e7;
   font-size: 1.5em;
   font-family: "Bubbler One", sans-serif;
@@ -337,11 +327,100 @@ input[type=submit]:hover {
 
 /* picture */
 .me {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   margin-left: 20px;
   margin-top: 20px;
   float: left;
+}
+
+@media screen and (max-width: 70rem) {
+  .headerO,
+.menu {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 27%;
+  }
+
+  .menu-item {
+    margin-bottom: 10px;
+  }
+
+  .head {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  .me {
+    width: 160px;
+    height: 160px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .Pabout {
+    margin-top: 10px;
+  }
+
+  .about {
+    width: 85%;
+  }
+
+  .sectAbout {
+    flex-direction: column;
+  }
+
+  .aboutList {
+    width: 80%;
+    margin-top: -20px;
+  }
+
+  form {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .Gallerywrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+  }
+
+  .pic {
+    margin-bottom: 20px;
+  }
+
+  .carousel {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .wrapperHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ulMenuHome {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 49rem) and (max-width: 75rem) {
+  .carousel {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .ulMenuHome {
+    display: flex;
+    flex-direction: column;
+    margin-left: 63%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

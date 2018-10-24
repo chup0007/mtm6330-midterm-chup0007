@@ -372,7 +372,7 @@ input[type=submit]:hover {
 .Pabout {
   width: 80%;
   font-size: 2.2em;
-  margin-left: 30px;
+  margin-left: 5%;
   margin-right: 25px;
   margin-top: 80px;
   font-weight: 200
@@ -385,7 +385,7 @@ input[type=submit]:hover {
 }
 
 .aboutList {
-  width: 250%;
+  width: 140%;
   font-size: 1.5em
 }
 
@@ -405,9 +405,125 @@ input[type=submit]:hover {
 }
 
 .me {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   margin-left: 20px;
   margin-top: 20px;
   float: left
+}
+
+@media screen and (max-width:70rem) {
+
+  .headerO,
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 27%
+  }
+
+  .menu-item {
+    margin-bottom: 10px
+  }
+
+  .head {
+    font-size: 2em;
+    font-weight: 300
+  }
+
+  .me {
+    width: 160px;
+    height: 160px
+  }
+
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+
+  .Pabout {
+    margin-top: 10px
+  }
+
+  .about {
+    width: 85%
+  }
+
+  .sectAbout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+
+  .aboutList {
+    width: 80%;
+    margin-top: -20px
+  }
+
+  form {
+    width: 90%;
+    margin-left: 20px
+  }
+
+  .Gallerywrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 80%;
+    height: auto
+  }
+
+  .pic {
+    margin-bottom: 20px
+  }
+
+  .carousel {
+    width: 80%;
+    margin-left: 10%
+  }
+
+  .wrapperHome {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+
+  .ulMenuHome,
+  .wrapperHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+}
+
+@media screen and (min-width:49rem) and (max-width:75rem) {
+  .carousel {
+    width: 50%;
+    margin-left: 25%
+  }
+
+  .ulMenuHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 63%
+  }
 }
